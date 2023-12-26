@@ -1,0 +1,5 @@
+ADD r3, r0, 1 
+ADD r4, r0, 3
+ADD r5, r3, r4
+INC r5
+PRT 2
