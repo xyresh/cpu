@@ -63,7 +63,9 @@ Flag  |  Description
 the emulator can run in interpreter mode by parsing `./cpu i` as your command line argument, or "run" mode, by `./cpu r <file name>`.
 you can directly write machine code in hexadecimal instructions form.
 an example would be:
+
 Instruction in hex | Description
+-------------------|-------------------------------------
 100A0F05           | add 10 15 to r5
 B0050000           | push r5 to stack
 A0000000           | set program counter to 0 (jump to 0)
