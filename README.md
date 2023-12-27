@@ -70,3 +70,10 @@ Instruction in hex | Description
 B0050000           | push r5 to stack
 A0000000           | set program counter to 0 (jump to 0)
 00000000           | program finish
+
+
+instructions take the form of 32 bit instructions
+
+op    | flag | opA  | opB  | Target
+------|------|------|------|--------
+4 bits|4 bits|8 bits|8 bits|8 bits
