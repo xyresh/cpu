@@ -81,7 +81,7 @@ int main(int argc, char * argv[])
 	int PC = 0;
 	char mode;
 
-	uint8_t RegF[10];
+	uint8_t RegF[10]={0};
 	//stack initialization
 	uint8_t *BP = stackinit();
 	uint8_t *SP = BP; //Stack pointer
@@ -90,14 +90,15 @@ int main(int argc, char * argv[])
 
 
 
-	printf("\nWelcome to this rudamentary emulator :D\n");
+	printf("\nMarios CPU emulator\n");
 	
 	mode = *argv[1];	
 
 
 	if (mode == 'i')
 	{
-		printf("\nInterpreter Mode\n");
+		printf("\nInterpreter Mode\nEach interpreted Command is entered in HEX machine code\n");
+
 		while (1)
 		{
 			printf("\n$> ");

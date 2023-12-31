@@ -94,7 +94,7 @@ int CU(struct Instruction in, RegFByte RegF[10], uint8_t dataM[])
 		else if(in.flag==2)//full memory display
 		{
 		    printf("\ndisplaying all registers: \n");
-		    for(int j=0;j<=10;j++)
+		    for(int j=0;j<10;j++)
 		    {
 		        printf("r%d : %d\n", j ,RegF[j]);
 		    }
